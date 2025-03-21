@@ -13,6 +13,10 @@ app.get('/version', (req, res) => {
   res.send(version)
 })
 
+app.get('/', (req, res) => {
+  res.send('Hello World Pokedex')
+})
+
 app.use(express.static('dist'))
 
 app.listen(PORT, () => {
